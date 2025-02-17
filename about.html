@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Project</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+ <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i id="close" class="fas fa-times" onclick="hideMenu()"></i>
+            </button>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="visual.html">VISUALS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i id="menu" class="fas fa-bars" onclick="showMenu()"></i>   
+    </nav>
+    <h1>The Work</h1>
+ </section>
+
+<!---about us content--->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Making The Website</h1>
+            <p>Every cybersecurity professional I find whether on YouTube or any other media platform, all had one thing in common. 
+                They made good use of their time. Seeing as how they utilized whatever amount of freedom they had to learn a new skill,
+                 I decided to do the same. I used an underrated, powerful tool known as a phone to search for various such said skills and this 
+                website is just one of many. Not only did I learn the basics of HTML, I am also able to understand and appreciate the effort of 
+                other programmers, realizing I still have a lot to learn. This website will be my guide in my journey and you, the audience. 
+                Let's see where this leads, shall we...</p>
+                 <a href="visual.html" class="more btn">EXPLORE MORE</a>
+        </div>
+        <div class="about-col">
+            <img src="images/team1.jpg">
+        </div>
+    </div>
+
+</section>
+
+
+<!---testimonials--->
+<section class="testimonials">
+    <h1>What Our Audience Say</h1>
+    <p>Straight from the mouths of the feedback team...</p>
+
+    <div class="row">
+        <div class="tes-col">
+            <img src="images/kg.jpg">
+            <div>
+                <p>Who knew I had such talented friends. This is inspirational. I've got some work to do.</p>
+                <h3>Kagisho Kgomo</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="tes-col">
+            <img src="images/aye.jpg">
+            <div>
+                <p>Yes King... This is amazing. Show the world what you're made of.</p>
+                <h3>Ayevbosa Zabayo</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!---footer--->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>If you're interested in my other projects, feel free to snoop around...</p>
+    <div class="icons">
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made By Praise Oyebode</p>
+</section>
+
+
+
+ <!---Javascript for toggle menu-->
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-180px"
+    }
+    var menu = document.getElementById("menu")
+</script>
+
+</body>
+</html>

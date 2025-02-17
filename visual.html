@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Project</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header1">
+       <nav>
+           <a href="index.html"><img src="images/logo.png"></a>
+           <div class="nav-links" id="navLinks">
+               <i id="close" class="fas fa-times" onclick="hideMenu()"></i>
+               </button>
+               <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="visual.html">VISUALS</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+           </div>
+           <i id="menu" class="fas fa-bars" onclick="showMenu()"></i>   
+       </nav>
+       <h1>Visuals</h1>
+    </section>
+
+   
+<section>
+    <div class="visuals">
+        <h1>Coding</h1>
+        <div class="box">
+            <video src="images/coding.mp4" controls autoplay muted loop></video>
+        </div>
+        <h1>Styling</h1>
+        <div class="box">
+            <video src="images/styling.mp4" controls autoplay muted loop></video>
+        </div>
+        <h1>Feedback</h1>
+        <div class="box">
+            <video src="images/feedback.mp4" controls autoplay muted loop></video>
+        </div>
+    </div>
+</section>
+
+
+<!---facilities--->
+<section class="facilities">
+    <h1>Applications</h1>
+    <p>Uses for this specific website.</p>
+
+    <div class="row">
+        <div class="fal-col">
+            <img src="images/cv.jpg">
+            <h3>CV Profile</h3>
+            <p>As someone in the tech industry, having a website like this can be used to showcase your 
+                skills in the computer languages you put down on your CV. Since actions are louder than 
+                words, then instead of saying it, why not 
+                show it?!</p>
+        </div>
+        <div class="fal-col">
+            <img src="images/temp.jpg">
+            <h3>Template</h3>
+            <p>A website like this can be used as a template or inspiration for another design. 
+                Why go through the trouble of starting over when you can have the tidious work already done 
+                and only customize the existing programme to your liking?!</p>
+            
+        </div>
+        <div class="fal-col">
+            <img src="images/ref.jpg">
+            <h3>Reflection</h3>
+            <p>See where you started and where you will be/are in the future. Keep your goals and 
+                priorities in check. You claim to be Kaizen. Did you improve or not? What's your answer?</p>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<!---footer--->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>If you're interested in my other projects, feel free to snoop around...</p>
+    <div class="icons">
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made By Praise Oyebode</p>
+</section>
+
+
+
+ <!---Javascript for toggle menu-->
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-180px"
+    }
+    var menu = document.getElementById("menu")
+</script>
+
+</body>
+</html>
